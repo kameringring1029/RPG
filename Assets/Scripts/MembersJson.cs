@@ -33,7 +33,10 @@ namespace MembersJson
         public string fullimgurl_0;
         public string fullimgurl_1;
         public string info;
-
+        public string status_s;
+        public string status_p;
+        public string status_c;
+        public string type;
     }
 
 

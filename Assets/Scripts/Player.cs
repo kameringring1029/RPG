@@ -15,17 +15,28 @@ public class Player : MonoBehaviour {
     private int angle_p;
 
 
+    public string id { get; set; }
+    public string rarity { get; set; }
+    public string name { get; set; }
+    public string series { get; set; }
+    public string fullimgurl_0 { get; set; }
+    public string fullimgurl_1 { get; set; }
+    public string info { get; set; }
+    public string status_s { get; set; }
+    public string status_p { get; set; }
+    public string status_c { get; set; }
+    public string type { get; set; }
 
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         isWalking = false;
         animeindex = 0;
         memberindex = 0;
         angle = 0;
         angle_p = 1;
-
-
+        
 
     }
 
@@ -103,9 +114,6 @@ public class Player : MonoBehaviour {
         }
 
     }
-
-
-
-
+    
 
 }

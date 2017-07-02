@@ -14,6 +14,7 @@ public class Gatcha : MonoBehaviour {
     public Sprite[] memberIcon;
 
 
+
     // Use this for initialization
     void Start () {
 
@@ -77,8 +78,29 @@ public class Gatcha : MonoBehaviour {
                     else if (membersInfo[i].name == "花陽") { member_id = 7; }
                     else if (membersInfo[i].name == "にこ") { member_id = 8; }
 
+
+                    /* ガチャ結果をGUI反映 */
                     GameObject.Find("gatcha_member ("+i+")").GetComponent<SpriteRenderer>().sprite = memberIcon[member_id];
                     GameObject.Find("Text (" + i + ")").GetComponent<Text>().text = membersInfo[i].series;
+
+
+                    /* 各ガチャ結果をインスタンスに代入 */
+                    GatchaMember memberObj = GameObject.Find("gatcha_member (" + i + ")").GetComponent<GatchaMember>();
+                    memberObj.id = membersInfo[i].id;
+                    memberObj.rarity = membersInfo[i].rarity;
+                    memberObj.name = membersInfo[i].name;
+                    memberObj.series = membersInfo[i].series;
+                    memberObj.fullimgurl_0 = membersInfo[i].fullimgurl_0;
+                    memberObj.fullimgurl_1 = membersInfo[i].fullimgurl_1;
+                    memberObj.info = membersInfo[i].info;
+                    memberObj.status_s = membersInfo[i].status_s;
+                    memberObj.status_p = membersInfo[i].status_p;
+                    memberObj.status_c = membersInfo[i].status_c;
+                    memberObj.type = membersInfo[i].type;
+
+
+                    Debug.Log(i + " " + membersInfo[i].name + "(" + membersInfo[i].series + "):" + membersInfo[i].type + "," + membersInfo[i].status_s + "," + membersInfo[i].status_p + "," + membersInfo[i].status_c);
+
                 }
 
 
