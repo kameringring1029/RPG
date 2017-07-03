@@ -1,9 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GatchaMember : MonoBehaviour
 {
+
+
+    public Sprite[] envelopeIcon;
+
 
     /* setter, getter付きプロパティ */
     public string id { get; set; }
@@ -39,6 +44,7 @@ public class GatchaMember : MonoBehaviour
     {
         Debug.Log("pushed");
         GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
+        GameObject.Find("envelope_Player").GetComponent<SpriteRenderer>().sprite = envelopeIcon[Int32.Parse(rarity)];
 
         /* Playerに反映 */
         Player playerObj = GameObject.Find("Player").GetComponent<Player>();

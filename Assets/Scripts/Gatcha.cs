@@ -5,6 +5,10 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 
 using MembersJson;
+using System;
+
+enum Member : int { Honoka, Eli, Kotori, Umi, Rin, Maki, Nozomi, Hanayo, Nico};
+enum Rarity : int { N, R, SR, SSR, UR};
 
 
 public class Gatcha : MonoBehaviour {
@@ -12,6 +16,7 @@ public class Gatcha : MonoBehaviour {
 
     public membersinfo[] membersInfo;
     public Sprite[] memberIcon;
+    public Sprite[] envelopeIcon;
 
 
 
@@ -77,11 +82,12 @@ public class Gatcha : MonoBehaviour {
                     else if (membersInfo[i].name == "希") { member_id = 6; }
                     else if (membersInfo[i].name == "花陽") { member_id = 7; }
                     else if (membersInfo[i].name == "にこ") { member_id = 8; }
-
+                    
 
                     /* ガチャ結果をGUI反映 */
                     GameObject.Find("gatcha_member ("+i+")").GetComponent<SpriteRenderer>().sprite = memberIcon[member_id];
                     GameObject.Find("Text (" + i + ")").GetComponent<Text>().text = membersInfo[i].series;
+                    GameObject.Find("envelope (" + i + ")").GetComponent<SpriteRenderer>().sprite = envelopeIcon[Int32.Parse( membersInfo[i].rarity)];
 
 
                     /* 各ガチャ結果をインスタンスに代入 */
