@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GatchaMember : MonoBehaviour
 {
@@ -43,8 +44,23 @@ public class GatchaMember : MonoBehaviour
     public void OnMouseDown()
     {
         Debug.Log("pushed");
+
+        string rarity_string = "";
+        if (this.rarity == "4") {
+            rarity_string = "UR";
+        }else if(this.rarity == "3") {
+            rarity_string = "SSR";
+        }else if (this.rarity == "2") {
+            rarity_string = "SR";
+        }else if (this.rarity == "1"){
+            rarity_string = "R";
+        }
+
+        GameObject.Find("Player").GetComponent<Transform>().localScale = new Vector3(1, 1, 0);
         GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
         GameObject.Find("envelope_Player").GetComponent<SpriteRenderer>().sprite = envelopeIcon[Int32.Parse(rarity)];
+        GameObject.Find("Text_Player").GetComponent<Text>().text = rarity_string + this.name +"("+this.series+")" + "\nスマイル：" + this.status_s + "\nピュア：" + this.status_p + "\nクール：" + this.status_c;
+
 
         /* Playerに反映 */
         Player playerObj = GameObject.Find("Player").GetComponent<Player>();

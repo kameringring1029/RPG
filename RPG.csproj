@@ -84,6 +84,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Button_Buttle.cs" />
+    <Compile Include="Assets\Scripts\Button_Home.cs" />
+    <Compile Include="Assets\Scripts\Button_Scout.cs" />
     <Compile Include="Assets\Scripts\Gatcha.cs" />
     <Compile Include="Assets\Scripts\GatchaMember.cs" />
     <Compile Include="Assets\Scripts\MembersJson.cs" />

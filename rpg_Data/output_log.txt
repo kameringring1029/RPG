@@ -1,0 +1,324 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     880 MB
+    Driver:   8.15.10.2696
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\USER\Documents\RPG\rpg_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\USER\Documents\RPG\rpg_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\USER\Documents\RPG\rpg_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\USER\Documents\RPG\rpg_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\USER\Documents\RPG\rpg_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\USER\Documents\RPG\rpg_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\USER\Documents\RPG\rpg_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\USER\Documents\RPG\rpg_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\USER\Documents\RPG\rpg_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\USER\Documents\RPG\rpg_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.025 seconds
+Platform assembly: C:\Users\USER\Documents\RPG\rpg_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\USER\Documents\RPG\rpg_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,-166
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.499572 ms
+{
+  "members": [
+    {
+      "desc": "R\u82b1\u967d", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1450622777016.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1450622777017.jpg", 
+      "id": "756", 
+      "info": "R\u5c0f\u6cc9\u82b1\u967d(\u30d4\u30e5\u30a2)\n2015\u5e7412\u670815\u65e5\u8ffd\u52a0\n[LV MAX]1810/3880/2310\n[\u7279\u6280]\u30c8\u30fc\u30bf\u30eb\u30a8\u30fc\u30eb", 
+      "name": "\u82b1\u967d", 
+      "rarity": "1", 
+      "series": "\u30d4\u30e5\u30a2", 
+      "status_c": "2310", 
+      "status_p": "3880", 
+      "status_s": "1810", 
+      "type": "\u30d4\u30e5\u30a2"
+    }, 
+    {
+      "desc": "R\u3053\u3068\u308a", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1366697500.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1367928990.PNG", 
+      "id": "30", 
+      "info": "R\u5357\u3053\u3068\u308a(\u30b9\u30de\u30a4\u30eb)\n\n[LV MAX]4/3260/2440\n[\u7279\u6280]\u30ea\u30ba\u30df\u30ab\u30eb\u30c1\u30e3\u30fc\u30e0", 
+      "name": "\u3053\u3068\u308a", 
+      "rarity": "1", 
+      "series": "\u30b9\u30de\u30a4\u30eb", 
+      "status_c": "2440", 
+      "status_p": "3260", 
+      "status_s": "4", 
+      "type": "\u30b9\u30de\u30a4\u30eb"
+    }, 
+    {
+      "desc": "R\u3053\u3068\u308a", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1429455694013.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1429455694014.jpg", 
+      "id": "571", 
+      "info": "R\u5357\u3053\u3068\u308a(\u30b9\u30de\u30a4\u30eb)\n2015\u5e744\u670815\u65e5\u8ffd\u52a0\n[LV MAX]3970/2200/1840\n[\u7279\u6280]\u30bf\u30a4\u30de\u30fc\u30c8\u30ea\u30c3\u30af", 
+      "name": "\u3053\u3068\u308a", 
+      "rarity": "1", 
+      "series": "\u30b9\u30de\u30a4\u30eb", 
+      "status_c": "1840", 
+      "status_p": "2200", 
+      "status_s": "3970", 
+      "type": "\u30b9\u30de\u30a4\u30eb"
+    }, 
+    {
+      "desc": "R\u7d75\u91cc", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1366646880.PNG", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1366695760.JPG", 
+      "id": "29", 
+      "info": "R\u7d62\u702c\u7d75\u91cc(\u30b9\u30de\u30a4\u30eb)\n\n[LV MAX]3280/2460/2030\n[\u7279\u6280]\u30ea\u30ba\u30df\u30ab\u30eb\u30c1\u30e3\u30fc\u30e0", 
+      "name": "\u7d75\u91cc", 
+      "rarity": "1", 
+      "series": "\u30b9\u30de\u30a4\u30eb", 
+      "status_c": "2030", 
+      "status_p": "2460", 
+      "status_s": "3280", 
+      "type": "\u30b9\u30de\u30a4\u30eb"
+    }, 
+    {
+      "desc": "R\u771f\u59eb", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1397634262004.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1397821248001.jpg", 
+      "id": "289", 
+      "info": "R\u897f\u6728\u91ce\u771f\u59eb(\u30af\u30fc\u30eb)\n2014\u5e744\u670815\u65e5\u8ffd\u52a0\n[LV MAX]1980/1850/4030\n[\u7279\u6280]\u30c8\u30fc\u30bf\u30eb\u30a8\u30fc\u30eb", 
+      "name": "\u771f\u59eb", 
+      "rarity": "1", 
+      "series": "\u30af\u30fc\u30eb", 
+      "status_c": "4030", 
+      "status_p": "1850", 
+      "status_s": "1980", 
+      "type": "\u30af\u30fc\u30eb"
+    }, 
+    {
+      "desc": "R\u7d75\u91cc", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1397632003006.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1397634262003.jpg", 
+      "id": "285", 
+      "info": "R\u7d62\u702c\u7d75\u91cc(\u30af\u30fc\u30eb)\n2014\u5e744\u670815\u65e5\u8ffd\u52a0\n[LV MAX]1880/1990/3990\n[\u7279\u6280]\u30c8\u30fc\u30bf\u30eb\u30a8\u30fc\u30eb", 
+      "name": "\u7d75\u91cc", 
+      "rarity": "1", 
+      "series": "\u30af\u30fc\u30eb", 
+      "status_c": "3990", 
+      "status_p": "1990", 
+      "status_s": "1880", 
+      "type": "\u30af\u30fc\u30eb"
+    }, 
+    {
+      "desc": "R\u7d75\u91cc", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1420353882016.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1420353882017.jpg", 
+      "id": "495", 
+      "info": "R\u7d62\u702c\u7d75\u91cc(\u30d4\u30e5\u30a2)\n2014\u5e7412\u670831\u65e5\u8ffd\u52a0\n[LV MAX]1840/3920/2280\n[\u7279\u6280]\u30d1\u30fc\u30d5\u30a7\u30af\u30c8\u30c1\u30e3\u30fc\u30e0", 
+      "name": "\u7d75\u91cc", 
+      "rarity": "1", 
+      "series": "\u30d4\u30e5\u30a2", 
+      "status_c": "2280", 
+      "status_p": "3920", 
+      "status_s": "1840", 
+      "type": "\u30d4\u30e5\u30a2"
+    }, 
+    {
+      "desc": "R\u5e0c", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1366696676.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1366179292.JPG", 
+      "id": "52", 
+      "info": "R\u6771\u689d\u5e0c(\u30af\u30fc\u30eb)\n\n[LV MAX]1850/2350/3230\n[\u7279\u6280]\u30d1\u30fc\u30d5\u30a7\u30af\u30c8\u30c1\u30e3\u30fc\u30e0", 
+      "name": "\u5e0c", 
+      "rarity": "1", 
+      "series": "\u30af\u30fc\u30eb", 
+      "status_c": "3230", 
+      "status_p": "2350", 
+      "status_s": "1850", 
+      "type": "\u30af\u30fc\u30eb"
+    }, 
+    {
+      "desc": "R\u82b1\u967d", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1366646913.PNG", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1368775326.png", 
+      "id": "35", 
+      "info": "R\u5c0f\u6cc9\u82b1\u967d(\u30b9\u30de\u30a4\u30eb)\n\n[LV MAX]3340/2010/2420\n[\u7279\u6280]\u30ea\u30ba\u30df\u30ab\u30eb\u30c1\u30e3\u30fc\u30e0", 
+      "name": "\u82b1\u967d", 
+      "rarity": "1", 
+      "series": "\u30b9\u30de\u30a4\u30eb", 
+      "status_c": "2420", 
+      "status_p": "2010", 
+      "status_s": "3340", 
+      "type": "\u30b9\u30de\u30a4\u30eb"
+    }, 
+    {
+      "desc": "R\u3053\u3068\u308a", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1397632003007.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1397632003008.jpg", 
+      "id": "286", 
+      "info": "R\u5357\u3053\u3068\u308a(\u30d4\u30e5\u30a2)\n2014\u5e744\u670815\u65e5\u8ffd\u52a0\n[LV MAX]1810/4020/2030\n[\u7279\u6280]\u30c8\u30fc\u30bf\u30eb\u30c1\u30e3\u30fc\u30e0", 
+      "name": "\u3053\u3068\u308a", 
+      "rarity": "1", 
+      "series": "\u30d4\u30e5\u30a2", 
+      "status_c": "2030", 
+      "status_p": "4020", 
+      "status_s": "1810", 
+      "type": "\u30d4\u30e5\u30a2"
+    }, 
+    {
+      "desc": "SR\u306b\u3053(\u30cf\u30ed\u30a6\u30a3\u30f3\u7de8)", 
+      "fullimgurl_0": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1412422963015.jpg", 
+      "fullimgurl_1": "https://cdn.img-conv.gamerch.com/img.gamerch.com/xn--eck5eb7eb/1412422963016.jpg", 
+      "id": "425", 
+      "info": "SR\u77e2\u6fa4\u306b\u3053(\u30cf\u30ed\u30a6\u30a3\u30f3\u7de8)\n2014\u5e749\u670830\u65e5\u8ffd\u52a0\n[LV MAX]4000/3440/4830\n[\u7279\u6280]\u307f\u3093\u306a\u3092\u5143\u6c17\u306b\u266a", 
+      "name": "\u306b\u3053", 
+      "rarity": "2", 
+      "series": "\u30cf\u30ed\u30a6\u30a3\u30f3\u7de8", 
+      "status_c": "4830", 
+      "status_p": "3440", 
+      "status_s": "4000", 
+      "type": "\u30af\u30fc\u30eb"
+    }
+  ]
+}
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SR矢澤にこ(ハロウィン編)
+2014年9月30日追加
+[LV MAX]4000/3440/4830
+[特技]みんなを元気に♪
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+0 花陽(ピュア):ピュア,1810,3880,2310
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+1 ことり(スマイル):スマイル,4,3260,2440
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+2 ことり(スマイル):スマイル,3970,2200,1840
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+3 絵里(スマイル):スマイル,3280,2460,2030
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+4 真姫(クール):クール,1980,1850,4030
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+5 絵里(クール):クール,1880,1990,3990
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+6 絵里(ピュア):ピュア,1840,3920,2280
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+7 希(クール):クール,1850,2350,3230
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+8 花陽(スマイル):スマイル,3340,2010,2420
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+9 ことり(ピュア):ピュア,1810,4020,2030
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+10 にこ(ハロウィン編):クール,4000,3440,4830
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]ことり(スマイル):スマイル,4,3260,2440
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]希(クール):クール,1850,2350,3230
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]花陽(スマイル):スマイル,3340,2010,2420
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]ことり(ピュア):ピュア,1810,4020,2030
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]にこ(ハロウィン編):クール,4000,3440,4830
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]絵里(クール):クール,1880,1990,3990
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]花陽(ピュア):ピュア,1810,3880,2310
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]ことり(スマイル):スマイル,4,3260,2440
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]絵里(ピュア):ピュア,1840,3920,2280
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+pushed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[Player]希(クール):クール,1850,2350,3230
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 22d4 -> priority: 1 
+  Thread -> id: 2a80 -> priority: 1 

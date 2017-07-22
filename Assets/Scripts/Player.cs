@@ -82,6 +82,7 @@ public class Player : MonoBehaviour {
     // テキスト表示
     void OnGUI()
     {
+        /*
         // リセットボタン
         if (GUI.Button(new Rect(5, 5, 150, 75), "リセット"))
         {
@@ -113,6 +114,7 @@ public class Player : MonoBehaviour {
 
         }
 
+    */
     }
     
 
