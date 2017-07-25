@@ -56,13 +56,15 @@ public class GatchaMember : MonoBehaviour
             rarity_string = "R";
         }
 
+
+        /* Playerの表示を変更 */
         GameObject.Find("Player").GetComponent<Transform>().localScale = new Vector3(1, 1, 0);
         GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = GetComponent<SpriteRenderer>().sprite;
         GameObject.Find("envelope_Player").GetComponent<SpriteRenderer>().sprite = envelopeIcon[Int32.Parse(rarity)];
         GameObject.Find("Text_Player").GetComponent<Text>().text = rarity_string + this.name +"("+this.series+")" + "\nスマイル：" + this.status_s + "\nピュア：" + this.status_p + "\nクール：" + this.status_c;
 
 
-        /* Playerに反映 */
+        /* Playerステータスの反映 */
         Player playerObj = GameObject.Find("Player").GetComponent<Player>();
         playerObj.id = this.id;
         playerObj.rarity = this.rarity;

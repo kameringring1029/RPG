@@ -9,7 +9,6 @@ public class Player : MonoBehaviour {
     private int animeindex;
     private int memberindex;
     public Sprite[] walk;
-    public Sprite[] members;
     private float speed = 5.0f;
     private float angle;
     private int angle_p;

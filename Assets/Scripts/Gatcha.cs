@@ -15,7 +15,6 @@ public class Gatcha : MonoBehaviour {
     
 
     public membersinfo[] membersInfo;
-    public Sprite[] memberIcon;
     public Sprite[] envelopeIcon;
 
 
@@ -83,7 +82,7 @@ public class Gatcha : MonoBehaviour {
                     else if (membersInfo[i].name == "花陽") { member_id = 7; }
                     else if (membersInfo[i].name == "にこ") { member_id = 8; }
 
-
+                    /*
                     if (member_id == 4 && membersInfo[i].rarity == "4")
                     {
                         member_id = 9;
@@ -94,19 +93,20 @@ public class Gatcha : MonoBehaviour {
                     {
                         member_id = 11;
                     }
+                    */
 
                     string rarity_str = "";
                     if (membersInfo[i].rarity == "4")
                     {
-                        rarity_str = "R";
+                        rarity_str = "UR";
                     }
                     else if (membersInfo[i].rarity == "3")
                     {
-                        rarity_str = "R";
+                        rarity_str = "SSR";
                     }
                     else if (membersInfo[i].rarity == "2")
                     {
-                        rarity_str = "R";
+                        rarity_str = "SR";
                     }
                     else if (membersInfo[i].rarity == "1")
                     {
@@ -116,11 +116,21 @@ public class Gatcha : MonoBehaviour {
                     /* ガチャ結果をGUI反映 */
 
                     GameObject.Find("gatcha_member (" + i + ")").GetComponent<Transform>().localScale = new Vector3(1,1,0);
-                    GameObject.Find("gatcha_member ("+i+")").GetComponent<SpriteRenderer>().sprite = memberIcon[member_id];
 
-                    //if (System.IO.File.Exists(Application.dataPath + "/Resources/character/muse0" + (member_id + 1) + "-" + rarity_str)) Debug.Log("[exixt]");
-
-                    //GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/muse0"+(member_id+1)+"-"+rarity_str);
+                    // 各レアリティ素材がある場合はそれをload
+                    if (System.IO.File.Exists(Application.dataPath + "/Resources/character/" + membersInfo[i].id + ".gif"))
+                    {
+                        GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/"+membersInfo[i].id);
+                    }
+                    else if (System.IO.File.Exists(Application.dataPath + "/Resources/character/muse0" + (member_id + 1) + "-" + rarity_str + ".gif"))
+                    {
+                        GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/muse0" + (member_id + 1) + "-" + rarity_str);
+                    }
+                    // 素材がない場合は汎用R素材をload
+                    else
+                    {
+                        GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/muse0" + (member_id + 1) + "-R");
+                    }
 
                     GameObject.Find("Text (" + i + ")").GetComponent<Text>().text = membersInfo[i].series;
                     GameObject.Find("envelope (" + i + ")").GetComponent<SpriteRenderer>().sprite = envelopeIcon[Int32.Parse( membersInfo[i].rarity)];
@@ -141,7 +151,7 @@ public class Gatcha : MonoBehaviour {
                     memberObj.type = membersInfo[i].type;
 
 
-                    Debug.Log(i + " " + membersInfo[i].rarity + "" + membersInfo[i].name + "(" + membersInfo[i].series + "):" + membersInfo[i].type + "," + membersInfo[i].status_s + "," + membersInfo[i].status_p + "," + membersInfo[i].status_c);
+                    Debug.Log(i + " " + membersInfo[i].id + " " + membersInfo[i].rarity + "" + membersInfo[i].name + "(" + membersInfo[i].series + "):" + membersInfo[i].type + "," + membersInfo[i].status_s + "," + membersInfo[i].status_p + "," + membersInfo[i].status_c);
 
                 }
 
