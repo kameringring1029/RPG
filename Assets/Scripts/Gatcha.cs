@@ -60,14 +60,6 @@ public class Gatcha : MonoBehaviour {
                 Debug.Log(membersInfo [10].info);
 
 
-                // バイナリデータとして取得する
-                //byte[] results = request.downloadHandler.data;
-                //Texture2D texture = readByBinary(results);
-
-                // Texture -> Spriteに変換する
-                //Sprite texture_sprite = Sprite.Create(texture, new Rect(0, 0, 256, 256), Vector2.zero);
-
-                //gameObject.GetComponent<SpriteRenderer>().sprite = texture_sprite;
 
                 int member_id = 10;
                 for (int i = 0; i < 11; ++i)
@@ -81,19 +73,6 @@ public class Gatcha : MonoBehaviour {
                     else if (membersInfo[i].name == "希") { member_id = 6; }
                     else if (membersInfo[i].name == "花陽") { member_id = 7; }
                     else if (membersInfo[i].name == "にこ") { member_id = 8; }
-
-                    /*
-                    if (member_id == 4 && membersInfo[i].rarity == "4")
-                    {
-                        member_id = 9;
-                    } else if (member_id == 4 && membersInfo[i].rarity == "2")
-                    {
-                        member_id = 10;
-                    } else if (member_id == 8 && membersInfo[i].rarity == "4")
-                    {
-                        member_id = 11;
-                    }
-                    */
 
                     string rarity_str = "";
                     if (membersInfo[i].rarity == "4")
@@ -115,22 +94,23 @@ public class Gatcha : MonoBehaviour {
 
                     /* ガチャ結果をGUI反映 */
 
+                   
                     GameObject.Find("gatcha_member (" + i + ")").GetComponent<Transform>().localScale = new Vector3(1,1,0);
 
-                    // 各レアリティ素材がある場合はそれをload
-                    if (System.IO.File.Exists(Application.dataPath + "/Resources/character/" + membersInfo[i].id + ".gif"))
+
+                    // 特定素材がある場合はそれをload
+                    GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/" + membersInfo[i].id);
+                    if (GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite == null)
                     {
-                        GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/"+membersInfo[i].id);
-                    }
-                    else if (System.IO.File.Exists(Application.dataPath + "/Resources/character/muse0" + (member_id + 1) + "-" + rarity_str + ".gif"))
-                    {
+                        // 各レアリティ素材がある場合はそれをload
                         GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/muse0" + (member_id + 1) + "-" + rarity_str);
+                        if (GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite == null)
+                        {
+                            // 素材がない場合は汎用R素材をload
+                            GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/muse0" + (member_id + 1) + "-R");
+                        }
                     }
-                    // 素材がない場合は汎用R素材をload
-                    else
-                    {
-                        GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("character/muse0" + (member_id + 1) + "-R");
-                    }
+
 
                     GameObject.Find("Text (" + i + ")").GetComponent<Text>().text = membersInfo[i].series;
                     GameObject.Find("envelope (" + i + ")").GetComponent<SpriteRenderer>().sprite = envelopeIcon[Int32.Parse( membersInfo[i].rarity)];
