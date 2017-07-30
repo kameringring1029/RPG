@@ -19,6 +19,6 @@ public class Button_Home : MonoBehaviour {
     {
         Debug.Log("Home pushed");
 
-        Application.LoadLevel("main_scene"); // シーンの名前かインデックスを指定
+        Application.LoadLevel("Scout"); // シーンの名前かインデックスを指定
     }
 }

@@ -1,8 +1,7 @@
 Temp/
 Obj/
 UnityGenerated/
-Library/*
-Library\*
+Library/
 ExportedObj/
 *.svd
 *.userprefs
@@ -13,13 +12,5 @@ ExportedObj/
 *.user
 *.unityproj
 *.booproj
-Library/assetDatabase3
-Library/assetDatabase3
-Library/CurrentLayout.dwlt
-Library/CurrentLayout.dwlt
-Library/InspectorExpandedItems.asset
-Library/metadata/*
-Library/metadata/14/14f27582ba2842342b2ad46a1ae8b791
-Library/metadata/e9/e9823cd3e1812dc4ca929d389e35cb46
-Library/ScriptAssemblies/Assembly-CSharp.dll
-Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+rpg.apk
+

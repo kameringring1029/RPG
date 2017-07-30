@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Button_Scout : MonoBehaviour {
 
@@ -17,8 +18,8 @@ public class Button_Scout : MonoBehaviour {
     /* アイコンを選択時 */
     public void OnMouseDown()
     {
-        Debug.Log("Home pushed");
+        Debug.Log("Scout pushed");
 
-        Application.LoadLevel("main_scene"); // シーンの名前かインデックスを指定
+        SceneManager.LoadScene("Scout");
     }
 }
