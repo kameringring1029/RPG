@@ -34,7 +34,7 @@ public class Gatcha : MonoBehaviour {
 
     IEnumerator GetText()
     {
-        UnityWebRequest request = UnityWebRequest.Get("http://koke.link:3000/unity/muse_UR");
+        UnityWebRequest request = UnityWebRequest.Get("http://koke.link:3000/unity/muse_UR_SR");
         // 下記でも可
         // UnityWebRequest request = new UnityWebRequest("http://example.com");
         // methodプロパティにメソッドを渡すことで任意のメソッドを利用できるようになった

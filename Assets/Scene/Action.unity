@@ -468,6 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  mainCamera: {fileID: 1793715049}
 --- !u!1001 &696944109
 Prefab:
   m_ObjectHideFlags: 0
@@ -1070,7 +1071,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.872983
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
