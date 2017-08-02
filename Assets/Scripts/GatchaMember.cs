@@ -37,7 +37,6 @@ public class GatchaMember : MonoBehaviour
     {
 
 
-
     }
 
     /* アイコンを選択時 */
