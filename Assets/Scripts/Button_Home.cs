@@ -4,18 +4,7 @@ using UnityEngine;
 
 public class Button_Home : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    /* アイコンを選択時 */
-    public void OnMouseDown()
+    public void ButtonPush()
     {
         Debug.Log("Home pushed");
 

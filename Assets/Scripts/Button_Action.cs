@@ -6,20 +6,7 @@ using UnityEngine.SceneManagement;
 public class Button_Action : MonoBehaviour
 {
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    /* アイコンを選択時 */
-    public void OnMouseDown()
+    public void ButtonPush()
     {
         Debug.Log("Action pushed");
 
