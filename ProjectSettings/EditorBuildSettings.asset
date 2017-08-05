@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Scout.unity
     guid: 1a2f1cd078443c348a62009d1e12de26
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Action.unity
     guid: 481953b4c3097af408fffdc5697c55c4
