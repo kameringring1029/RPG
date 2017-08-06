@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\Button_Right.cs" />
     <Compile Include="Assets\Scripts\Button_Scout.cs" />
     <Compile Include="Assets\Scripts\Gatcha.cs" />
+    <Compile Include="Assets\Scripts\MemberGatcha.cs" />
     <Compile Include="Assets\Scripts\MembersJson.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Scout_Retry.cs" />
