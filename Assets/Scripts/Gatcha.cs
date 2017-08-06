@@ -111,6 +111,8 @@ public class Gatcha : MonoBehaviour {
                         }
                     }
 
+                    //GameObject.Find("Button_Select_Member0").GetComponent<SpriteRenderer>().sprite = GameObject.Find("gatcha_member (" + i + ")").GetComponent<SpriteRenderer>().sprite;
+
 
                     GameObject.Find("Text (" + i + ")").GetComponent<Text>().text = membersInfo[i].series;
                     GameObject.Find("envelope (" + i + ")").GetComponent<SpriteRenderer>().sprite = envelopeIcon[Int32.Parse( membersInfo[i].rarity)];

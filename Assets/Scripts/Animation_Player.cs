@@ -11,15 +11,18 @@ public class Animation_Player : MonoBehaviour
     private Rigidbody2D rigidbody2D;
     private Animator anim;
 
+    public float x;
+
     void Start()
     {
+        x = 0;
         anim = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
-        float x = Input.GetAxisRaw("Horizontal");
+        //float x = Input.GetAxisRaw("Horizontal");
         if (x != 0)
         {
             rigidbody2D.velocity = new Vector2(x * speed, rigidbody2D.velocity.y);
@@ -53,5 +56,10 @@ public class Animation_Player : MonoBehaviour
             rigidbody2D.velocity = new Vector2(0, rigidbody2D.velocity.y);
             anim.SetBool("Dash", false);
         }
+    }
+
+    public void setX(int x)
+    {
+        this.x = x;
     }
 }

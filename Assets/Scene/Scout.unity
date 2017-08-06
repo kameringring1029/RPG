@@ -3241,10 +3241,10 @@ RectTransform:
   - {fileID: 1582938632}
   - {fileID: 236888865}
   - {fileID: 1897552454}
-  - {fileID: 398647985}
-  - {fileID: 354241755}
   - {fileID: 371771388}
+  - {fileID: 398647985}
   - {fileID: 1807311309}
+  - {fileID: 354241755}
   - {fileID: 811256970}
   m_Father: {fileID: 0}
   m_RootOrder: 5
