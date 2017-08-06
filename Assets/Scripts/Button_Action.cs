@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class Button_Action : MonoBehaviour
 {
 
+    public GameObject Canvas_Scout;
+
     public void ButtonPush()
     {
         Debug.Log("Action pushed");
 
-        SceneManager.LoadScene("Action");
+        Canvas_Scout.SetActive(false);
+
+        //SceneManager.LoadScene("Action");
     }
 }

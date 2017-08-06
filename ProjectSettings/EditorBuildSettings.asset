@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Scout.unity
     guid: 1a2f1cd078443c348a62009d1e12de26
   - enabled: 1

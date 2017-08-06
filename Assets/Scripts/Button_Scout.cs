@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Button_Scout : MonoBehaviour {
 
+    public GameObject Canvas_Scout;
+
     public void ButtonPush() { 
         Debug.Log("Scout pushed");
 
-        SceneManager.LoadScene("Scout");
+        Canvas_Scout.SetActive(true);
+        //GameObject.Find("Canvas_Action").GetComponent<Canvas>().enabled = false;
+
+        //SceneManager.LoadScene("Scout");
     }
 }
